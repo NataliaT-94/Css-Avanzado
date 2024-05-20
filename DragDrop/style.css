@@ -1,0 +1,160 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(143, 188, 143);
+}
+.upload-container{
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+.upload-container > .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.upload-container .description{
+    color: #999;
+}
+.upload-container .drag-drop{
+    border: dashed 3px #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-sizing: border-box;
+    padding: 60px 30px;
+    margin: 20px 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #999;
+    gap: 10px;
+}
+.upload-container .drag-drop .icon svg{
+    width: 100px;
+    height: 100px;
+    fill: rgba(32, 178, 170, 0.5);
+}
+.upload-container .drag-drop .btn{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(38, 170, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    min-width: 200px;
+    cursor: pointer;
+}
+.upload-container .drag-drop .btn:hover{
+    background-color: rgb(35, 145, 35);
+}
+.upload-container .title-section{
+    text-align: left;
+    color: #999;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.upload-container .uploaded-files{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.upload-container .uploaded-files .files{
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    -moz-transition: box-shadow 0.3s ease-in-out;
+    -ms-transition: box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out;
+}
+.upload-container .uploaded-files .files:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.upload-container .uploaded-files .files .icon{
+    width: 48px;
+}
+.upload-container .uploaded-files .files .icon img{
+    width: 48px;
+    height: 48px;
+}
+.upload-container .uploaded-files .files .title{
+    flex: 1;
+}
+.upload-container .uploaded-files .files .title .name{
+    display: block;
+    padding-bottom: 5px;
+}
+.upload-container .uploaded-files .files .title .size{
+    color: #999;
+    font-size: 14px;
+}
+.upload-container .uploaded-files .files .title .progress{
+    height: 5px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    overflow: hidden;
+}
+.upload-container .uploaded-files .files .title .progress .progress-60{
+    height: 5px;
+    width: 60%;
+    background-color: rgb(38, 170, 38);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.upload-container .uploaded-files .files .actions button{
+    padding: 10px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload-container .uploaded-files .files .actions button{
+    width: 30px;
+    height: 30px;
+    fill: #555;
+}
+.upload-container .uploaded-files .files .actions button:hover{
+    background-color: #ddd;
+}
